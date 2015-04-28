@@ -39,9 +39,7 @@ properties.forEach(function( name ) {
 			return this._getValue( property );
 		},
 		set: function( value ) {
-			if ( parseInt( value ) > 0 ) {
-				this._setValue( property, value );
-			}
+			this._setValue( property, value );
 		}
 	});
 });
